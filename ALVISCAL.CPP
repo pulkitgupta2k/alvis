@@ -31,7 +31,7 @@ struct conversation
 
 };
 conversation :: conversation(){
-		for (int i=0;i<5;i++)
+		for (int i=0;i<6;i++)
 			input[0][i]='.';
 		len=0;
 }
@@ -64,7 +64,7 @@ void conversation::say(){
 }
 
 void conversation::clean(){
-		for (int r=0; r<5;r++)
+		for (int r=0; r<6;r++)
 		{
 		for (int t=0;t<20;t++)
 			{
@@ -89,10 +89,11 @@ int main()
 	cout<<"FORGET						(3)\n";
 	cout<<"TALK						(4)\n";
 	cout<<"BYE?						(5)\n";
+	cout<<"PRINT 'HELLO WORLD!'?				(6)\n";
 	cin>>ch;
 
 	/*conversation q;
-	for(int z=0;z<5;z++)
+	for(int z=0;z<6;z++)
 	{for(int y=0;y<20;y++)
 	cout<<q.input[y][z];
 	cout<<"\n";}*/
@@ -121,7 +122,7 @@ int main()
 				{
 				cout<<"ENTRY NUMBER:	"<<c.slno<<"\n";
 
-				for(int w=0;w<5;w++)
+				for(int w=0;w<6;w++)
 				{for(int e=0;e<20;e++)
 					cout<<c.input[e][w];
 					cout<<"\n";}
@@ -264,6 +265,7 @@ int main()
 					case 2:cout<<"I don't know.\n";number++;break;
 					case 3:cout<<"It's hard to answer.\n";number++;break;
 					case 4:cout<<"Stop troubling me!\n";number=0;break;
+					case 5:cout<<"Hello World!\n";number=0;break;
 					}
 				}
 
