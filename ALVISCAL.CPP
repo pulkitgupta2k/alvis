@@ -39,11 +39,11 @@ void conversation :: learn(){
 		int flag=1;
 		char take[10];
 
-		cout<<"ENTER THE SERIAL NUMBER FOR THIS ENTRY:	";
+		cout<<"SPECIFY THE SR. NO. FOR THIS ENTRY:	";
 		cin>>slno;
 
 		while (flag==1){
-		cout<<"ENTER THE KEY WORDS:"	;
+		cout<<"PROVIDE THE KEY WORDS:"	;
 		cin>>take;
 
 		for(int i=0; i<strlen(take); i++)
@@ -83,7 +83,7 @@ int main()
 	int ch=0;
 	do{
 	system("cls");
-	cout<<"HELLO THERE! WHAT DO YOU WANT ME TO DO?\n";
+	cout<<"HEY THERE! HOW CAN I HELP YOU?\n";
 	cout<<"LEARN						(1)\n";
 	cout<<"TAKE A LOOK AT THE ENTRIES  			(2)\n";
 	cout<<"FORGET						(3)\n";
