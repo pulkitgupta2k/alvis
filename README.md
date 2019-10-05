@@ -1,2 +1,2 @@
 # alvis
-A chatbot
+A simple chatbot based on C++
