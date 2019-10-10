@@ -6,7 +6,7 @@
 #include<string>
 #include<stdlib.h>
 #include<time.h>
-
+#include<conio.h>
 
 using namespace std;
 
@@ -14,6 +14,7 @@ void delay(int delay)
 {
     int now=time(NULL);
     int later=now+delay;
+	cout<<"Adding Delay";
     while(now<=later)
         now=time(NULL);
 }
@@ -55,7 +56,7 @@ void conversation :: learn(){
 		cout<<"DO YOU WANT TO ENTER MORE?(1/0)	";
 		cin>>flag;
 		}
-		cout<<"WHAT SHOULD I SAY?	";
+		cout<<"WHAT SHOULD I SAY? Tell Me please	";
 		cin>>output;
 }
 
